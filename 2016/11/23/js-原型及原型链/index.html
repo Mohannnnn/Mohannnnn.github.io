@@ -110,7 +110,7 @@ js原型总">
 <meta property="og:site_name" content="MoHan">
 <meta property="og:description" content="在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。
 js原型总">
-<meta property="og:updated_time" content="2016-11-22T12:03:33.703Z">
+<meta property="og:updated_time" content="2016-11-22T12:18:10.726Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js 原型及原型链">
 <meta name="twitter:description" content="在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。
@@ -384,8 +384,7 @@ js原型总">
 </blockquote>
 <h5 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h5><p>我们定义一个SuperType(超级函数)，和一个（一般函数），在将SuperType函数的属性和原型中的方法都继承过来。</p>
 <h6 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h6><p><code>.js代码</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span> , <span class="string">'blue'</span> , <span class="string">'green'</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span> (<span class="params">name , age</span>) </span>&#123;</div><div class="line">    <span class="comment">//继承SuperType的构造函数的属性，原型对象中的方法也是继承了</span></div><div class="line">    SuperType.call(<span class="keyword">this</span> , name);<span class="comment">//第二次调用SuperType</span></div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();<span class="comment">//第一次调用SuperType</span></div><div class="line">SubType.prototype.constructor =  SubType;</div><div class="line">SubType.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> newType = <span class="keyword">new</span> SubType(<span class="string">'wu'</span>,<span class="number">20</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(SuperType.prototype);<span class="comment">//输出SuperType&#123;...&#125;,原型对象</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__);<span class="comment">//输出function()&#123;&#125;</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__.__proto__);<span class="comment">//输出Object()&#123;&#125;</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__.__proto__.__proto__);<span class="comment">//输出null</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.prototype.constructor);<span class="comment">//输出function SuperType () &#123;...&#125;</span></div><div class="line"><span class="built_in">console</span>.log(newType.constructor);<span class="comment">//输出function SubType () &#123;...&#125;</span></div><div class="line"><span class="built_in">console</span>.log(newType.prototype);<span class="comment">//输出undefined</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__);<span class="comment">//输出subType.prototype,即subType的原型对象</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.constructor);<span class="comment">//输出function subType () &#123;...&#125;构造函数</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.__proto__);<span class="comment">//输出SuperType.prototype,即superType的原型对象</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.__proto__.__proto__);<span class="comment">//输出Object()&#123;&#125;</span></div></pre></td></tr></table></figure></p>
-<p><strong>说明：</strong></p>
-<p>1.输出SuperType{…}。因为输出的是SuperType的原型对像</p>
+<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>1.输出SuperType{…}。因为输出的是SuperType的原型对像</p>
 <p>2.输出function () {}。因为函数的<code>__proto__</code>属性是指向的是Function的原型对象，即Function.prototype</p>
 <p>3.输出Object(){}。因为Function.prototype的原型是Object.</p>
 <p>4.输出null。因为Object的原型是null</p>
@@ -451,6 +450,10 @@ js原型总">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/24/js-Promise异步执行/" rel="prev" title="js Promise异步执行">
+                js Promise异步执行 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -522,7 +525,7 @@ js原型总">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -603,7 +606,7 @@ js原型总">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#例如："><span class="nav-number">1.</span> <span class="nav-text">例如：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#附：对new操作符的认识"><span class="nav-number">2.</span> <span class="nav-text">附：对new操作符的认识</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#例如："><span class="nav-number">1.</span> <span class="nav-text">例如：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#说明："><span class="nav-number">1.2.</span> <span class="nav-text">说明：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#附：对new操作符的认识"><span class="nav-number">2.</span> <span class="nav-text">附：对new操作符的认识</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></div>
             
 
           </div>
