@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -102,22 +102,22 @@
 
 
 
-<meta name="description" content="对于js的闭包，想必大家也都心知肚明了。一般函数执行完毕后，函数内部的活动对像都会被销毁，内存中仅仅保存的是全局作用域，但闭包却是在活动结束后，对象仍会活跃在内存中，它不会被销毁，通过这些对象，我们就又可以访问或改变局部变量。下面我会简单介绍闭包的特性和作用，以及会通过一个实例来具体讲解闭包(这个实例是我在网上找的一个经典例子)。
-js闭包三大特性
-1.函数嵌套函数2.函内部可以引用外部的参数和">
+<meta name="description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+
+我使用的是NexT主题,如果喜欢的话可以点击Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js Closure(闭包)">
-<meta property="og:url" content="https://fututer.github.io/2016/11/22/js-Closure-闭包/index.html">
+<meta property="og:title" content="Hexo搭建一个博客网站">
+<meta property="og:url" content="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/index.html">
 <meta property="og:site_name" content="MoHan">
-<meta property="og:description" content="对于js的闭包，想必大家也都心知肚明了。一般函数执行完毕后，函数内部的活动对像都会被销毁，内存中仅仅保存的是全局作用域，但闭包却是在活动结束后，对象仍会活跃在内存中，它不会被销毁，通过这些对象，我们就又可以访问或改变局部变量。下面我会简单介绍闭包的特性和作用，以及会通过一个实例来具体讲解闭包(这个实例是我在网上找的一个经典例子)。
-js闭包三大特性
-1.函数嵌套函数2.函内部可以引用外部的参数和">
-<meta property="og:updated_time" content="2016-11-22T12:18:35.541Z">
+<meta property="og:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+
+我使用的是NexT主题,如果喜欢的话可以点击Hexo">
+<meta property="og:updated_time" content="2016-11-26T08:38:35.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js Closure(闭包)">
-<meta name="twitter:description" content="对于js的闭包，想必大家也都心知肚明了。一般函数执行完毕后，函数内部的活动对像都会被销毁，内存中仅仅保存的是全局作用域，但闭包却是在活动结束后，对象仍会活跃在内存中，它不会被销毁，通过这些对象，我们就又可以访问或改变局部变量。下面我会简单介绍闭包的特性和作用，以及会通过一个实例来具体讲解闭包(这个实例是我在网上找的一个经典例子)。
-js闭包三大特性
-1.函数嵌套函数2.函内部可以引用外部的参数和">
+<meta name="twitter:title" content="Hexo搭建一个博客网站">
+<meta name="twitter:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+
+我使用的是NexT主题,如果喜欢的话可以点击Hexo">
 
 
 
@@ -145,13 +145,13 @@ js闭包三大特性
 
 
 
-  <link rel="canonical" href="https://fututer.github.io/2016/11/22/js-Closure-闭包/"/>
+  <link rel="canonical" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/"/>
 
 
 
 
 
-  <title> js Closure(闭包) | MoHan </title>
+  <title> Hexo搭建一个博客网站 | MoHan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -282,7 +282,7 @@ js闭包三大特性
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/11/22/js-Closure-闭包/">
+  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="吴晗(Mo Han)">
@@ -306,7 +306,7 @@ js闭包三大特性
             
             
               
-                js Closure(闭包)
+                Hexo搭建一个博客网站
               
             
           </h1>
@@ -319,8 +319,8 @@ js闭包三大特性
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T19:19:33+08:00">
-                2016-11-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-26T15:48:13+08:00">
+                2016-11-26
               </time>
             
 
@@ -338,8 +338,8 @@ js闭包三大特性
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
                   </a>
                 </span>
 
@@ -353,8 +353,8 @@ js闭包三大特性
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/22/js-Closure-闭包/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/js-Closure-闭包/" itemprop="commentCount"></span>
+                <a href="/2016/11/26/Hexo搭建一个博客网站/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/Hexo搭建一个博客网站/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,7 +364,7 @@ js闭包三大特性
 
           
           
-             <span id="/2016/11/22/js-Closure-闭包/" class="leancloud_visitors" data-flag-title="js Closure(闭包)">
+             <span id="/2016/11/26/Hexo搭建一个博客网站/" class="leancloud_visitors" data-flag-title="Hexo搭建一个博客网站">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,23 +390,29 @@ js闭包三大特性
 
       
         <blockquote>
-<p>对于js的闭包，想必大家也都心知肚明了。一般函数执行完毕后，函数内部的活动对像都会被销毁，内存中仅仅保存的是全局作用域，但闭包却是在活动结束后，对象仍会活跃在内存中，它不会被销毁，通过这些对象，我们就又可以访问或改变局部变量。下面我会简单介绍闭包的特性和作用，以及会通过一个实例来具体讲解闭包(这个实例是我在网上找的一个经典例子)。</p>
-<p><strong>js闭包三大特性</strong></p>
-<p>1.函数嵌套函数<br>2.函内部可以引用外部的参数和变量<br>3.变量不会被垃圾回收机制回收</p>
+<p>本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网</a></strong>看看文档。<br><strong>说明</strong><br>此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。</p>
 </blockquote>
-<h5 id="作用一"><a href="#作用一" class="headerlink" title="作用一:"></a>作用一:</h5><p>实现匿名执行函数，这种方法不会污染全局变量。</p>
-<h6 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h6><p><code>.js代码</code></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fun = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        a ++;</div><div class="line">        <span class="built_in">console</span>.log(a);</div><div class="line">    &#125;</div><div class="line">&#125;)();</div><div class="line">fun();<span class="comment">//输出2</span></div><div class="line">fun();<span class="comment">//输出3</span></div></pre></td></tr></table></figure>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>这里模块化了代码，我们创建了一个匿名立即执行函数，并将它得返回值赋值给了fun,函数返回的函数输出a,但是这里闭包a，所以内存无法在调用fun函数之后，释放掉变量a，所以a的值会在下一次调用时增加。</p>
-<h5 id="作用二"><a href="#作用二" class="headerlink" title="作用二:"></a>作用二:</h5><p>实现封装，让函数存在私有变量和方法。</p>
-<h6 id="代码"><a href="#代码" class="headerlink" title="代码:"></a>代码:</h6><p><code>.js代码</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> person = (<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> name = <span class="string">'wuhan'</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getName</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">return</span> name;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">setNewName</span> (<span class="params">newName</span>) </span>&#123;</div><div class="line">        name = newName;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        <span class="attr">getName</span> : getName,</div><div class="line">        <span class="attr">setNewName</span> : setNewName</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;)();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(person.name);<span class="comment">//undefined</span></div><div class="line"><span class="built_in">console</span>.log(person.getName());<span class="comment">//wuhan</span></div><div class="line">person.setNewName(<span class="string">'wuhan123'</span>);</div><div class="line"><span class="built_in">console</span>.log(person.getName());<span class="comment">//wuhan123</span></div></pre></td></tr></table></figure></p>
-<h6 id="说明：-1"><a href="#说明：-1" class="headerlink" title="说明："></a>说明：</h6><p>这里我们在person匿名函数内部创建了一个私有属性，这个属性只能通过内部的函数getName()和setNewName()来访问或者改变它的值,因此我们将它的内部函数返回出去。在外部我们就能访问或改变它的属性值了。</p>
-<h5 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h5><p>这是一个经典的例子，如果能够明白，那么想必对闭包理解应该了熟于心了。</p>
-<h6 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h6><p><code>.js代码</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params">n,o</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(o);</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">        <span class="attr">fun</span>:<span class="function"><span class="keyword">function</span>(<span class="params">m</span>)</span>&#123;</div><div class="line">            <span class="keyword">return</span> fun(m,n);</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> a = fun(<span class="number">0</span>);  a.fun(<span class="number">1</span>);  a.fun(<span class="number">2</span>);  a.fun(<span class="number">3</span>);<span class="comment">//?,?,?,?</span></div><div class="line"><span class="keyword">var</span> b = fun(<span class="number">0</span>).fun(<span class="number">1</span>).fun(<span class="number">2</span>).fun(<span class="number">3</span>);<span class="comment">//?,?,?,?</span></div><div class="line"><span class="keyword">var</span> c = fun(<span class="number">0</span>).fun(<span class="number">1</span>);  c.fun(<span class="number">2</span>);  c.fun(<span class="number">3</span>);<span class="comment">//?,?,?,?</span></div><div class="line"><span class="comment">//问:三行a,b,c的输出分别是什么？</span></div><div class="line"><span class="comment">//可以先在纸上写出答案然后对照。</span></div></pre></td></tr></table></figure></p>
-<h6 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h6><p>第一行输出：undefined 0 0 0<br>第二行输出：undefined 0 1 2<br>第三行输出：undefined 0 1 1</p>
-<h6 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h6><p>第一行：<br>    1：先调用第一个fun函数，因为函数只有一个参数，所以参数n=0,o=undefiend,所以会先console出一个undefined,然后将 return的函数赋值给a.<br>    2：然后a.fun(1)会执行返回的对象中的fun(m)，此时m=1,n=0,所以又会return出第一层function(1,0)，然后console出0。a.fun(2)、a.fun(3)都是和a.fun(1)一个道理的。</p>
-<p>第二行：<br>    1：第一个输出undefined(这不用解释吧)。<br>    2：会先输出0，当执行.fun(1)的时候，其实是执行的是里层的fun函数，然后返回外层的fun函数，此时外层参数n=1,o=0，所以console出0。 当执行.fun(2)的时候，同样的道理执行的是里面的fun函数，然后返回外层的fun函数，此时里层参数m=2,n=1,相应的外层参数n=2,o=1,所以console出1。最后同样，console出2。</p>
-<p>第三行：<br>    1：第一个输出undefined(这不用解释吧)。<br>    2：会先输出0，fun(0).fun(1)的其实是返回的一个新的外层带参数fun(1，0)的函数，这里会将此返回值赋值给c,然后c.fun(2)执行里面的fun函数，此时m=2,n=1,外层函数的o就等于1，所以会console出1。c.fun(3)道理和c.fun(2)一样只是m变了，并不影响外层第二个参数o，o始终为1。</p>
+<p>我使用的是NexT主题,如果喜欢的话可以点击<strong><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Hexo的NexT主题和其他配置</a></strong>查看。</p>
+<p>好了，开始了！</p>
+<h4 id="正式安装Hexo"><a href="#正式安装Hexo" class="headerlink" title="正式安装Hexo"></a>正式安装Hexo</h4><h5 id="步骤一："><a href="#步骤一：" class="headerlink" title="步骤一："></a>步骤一：</h5><p>安装 全局的hexo<br><strong>npm install hexo -g</strong></p>
+<h5 id="步骤二："><a href="#步骤二：" class="headerlink" title="步骤二："></a>步骤二：</h5><p>初始化<br>首先需要你创建一个目录，然后用命令行进到所在目录下。执行<strong>npm init</strong></p>
+<h5 id="步骤三："><a href="#步骤三：" class="headerlink" title="步骤三："></a>步骤三：</h5><p>生成静态页面<br><strong>hexo generate</strong>（hexo g也可以）</p>
+<h5 id="步骤四："><a href="#步骤四：" class="headerlink" title="步骤四："></a>步骤四：</h5><p>本地启动<br><strong>hexo server</strong><br>然后再输入<a href="localhost::4000" target="_blank" rel="external">localhost::4000</a>查看</p>
+<h4 id="配置github-让你的博客网站启动"><a href="#配置github-让你的博客网站启动" class="headerlink" title="配置github,让你的博客网站启动"></a>配置github,让你的博客网站启动</h4><h5 id="步骤一：-1"><a href="#步骤一：-1" class="headerlink" title="步骤一："></a>步骤一：</h5><p>建立Repository<br>在你的github上新建一个Repository,取名为:<strong>你的github名.github.io</strong></p>
+<h5 id="步骤二：-1"><a href="#步骤二：-1" class="headerlink" title="步骤二："></a>步骤二：</h5><p>更改你的本地初始化后的<strong>_config.yml</strong>文件,<br>改成下面这样：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"></div><div class="line"><span class="attr">     type:</span> git</div><div class="line"></div><div class="line"><span class="attr">     repo:</span> https://github.com/你的github名/你的github名.github.io.git</div><div class="line"></div><div class="line"><span class="attr">     branch:</span> master</div></pre></td></tr></table></figure></p>
+<p>然后执行：<strong>hexo deploy</strong></p>
+<h4 id="常用命令总结"><a href="#常用命令总结" class="headerlink" title="常用命令总结"></a>常用命令总结</h4><p>每次部署的步骤，可按以下三步来进行。</p>
+<p>1.hexo clean</p>
+<p>2.hexo generate</p>
+<p>3.hexo deploy</p>
+<p>一些常用命令：</p>
+<p>hexo new “postName” #新建文章</p>
+<p>hexo new page”pageName” #新建页面</p>
+<p>hexo generate #生成静态页面至public目录</p>
+<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
+<p>hexo deploy #将.deploy目录部署到GitHub</p>
+<p>hexo help # 查看帮助</p>
+<p>hexo version #查看Hexo的版本</p>
 
       
     </div>
@@ -430,7 +436,7 @@ js闭包三大特性
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -439,8 +445,8 @@ js闭包三大特性
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/21/js图片惰性加载/" rel="next" title="js图片惰性加载">
-                <i class="fa fa-chevron-left"></i> js图片惰性加载
+              <a href="/2016/11/25/HTML5-CSS3-布局/" rel="next" title="HTML5+CSS3 布局">
+                <i class="fa fa-chevron-left"></i> HTML5+CSS3 布局
               </a>
             
           </div>
@@ -448,10 +454,6 @@ js闭包三大特性
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/23/js-原型及原型链/" rel="prev" title="js 原型及原型链">
-                js 原型及原型链 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -477,8 +479,8 @@ js闭包三大特性
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/22/js-Closure-闭包/"
-           data-title="js Closure(闭包)" data-url="https://fututer.github.io/2016/11/22/js-Closure-闭包/">
+      <div class="ds-thread" data-thread-key="2016/11/26/Hexo搭建一个博客网站/"
+           data-title="Hexo搭建一个博客网站" data-url="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
       </div>
     
   </div>
@@ -604,7 +606,7 @@ js闭包三大特性
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#作用一"><span class="nav-number">1.</span> <span class="nav-text">作用一:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#说明："><span class="nav-number">1.2.</span> <span class="nav-text">说明：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#作用二"><span class="nav-number">2.</span> <span class="nav-text">作用二:</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码"><span class="nav-number">2.1.</span> <span class="nav-text">代码:</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#说明：-1"><span class="nav-number">2.2.</span> <span class="nav-text">说明：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实例："><span class="nav-number">3.</span> <span class="nav-text">实例：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码：-1"><span class="nav-number">3.1.</span> <span class="nav-text">代码：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#答案"><span class="nav-number">3.2.</span> <span class="nav-text">答案</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#解释"><span class="nav-number">3.3.</span> <span class="nav-text">解释</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#正式安装Hexo"><span class="nav-number">1.</span> <span class="nav-text">正式安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一："><span class="nav-number">1.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二："><span class="nav-number">1.2.</span> <span class="nav-text">步骤二：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤三："><span class="nav-number">1.3.</span> <span class="nav-text">步骤三：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤四："><span class="nav-number">1.4.</span> <span class="nav-text">步骤四：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置github-让你的博客网站启动"><span class="nav-number">2.</span> <span class="nav-text">配置github,让你的博客网站启动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一：-1"><span class="nav-number">2.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二：-1"><span class="nav-number">2.2.</span> <span class="nav-text">步骤二：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令总结"><span class="nav-number">3.</span> <span class="nav-text">常用命令总结</span></a></li></ol></div>
             
 
           </div>
