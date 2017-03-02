@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -102,22 +102,22 @@
 
 
 
-<meta name="description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta name="description" content="今天看了一些关于数组对象、字符串、数字以及对象的排序方法。这里总结一下
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
+数字、字符串排序1234567891011121314151617181920var arr1 = [	1,4,2,6,3,0,&apos;a&apos;,&apos;c&apos;,&apos;b&apos;,9,7];//非对象排序var by1 = function (a , b) &amp;#123;	if ( a ===  b) &amp;#123;		return 0;	&amp;#125;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建一个博客网站">
-<meta property="og:url" content="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/index.html">
+<meta property="og:title" content="字符、数字以及对象排序">
+<meta property="og:url" content="https://fututer.github.io/2017/03/02/字符、数字以及对象排序/index.html">
 <meta property="og:site_name" content="MoHan">
-<meta property="og:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta property="og:description" content="今天看了一些关于数组对象、字符串、数字以及对象的排序方法。这里总结一下
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
-<meta property="og:updated_time" content="2016-11-26T08:38:35.921Z">
+数字、字符串排序1234567891011121314151617181920var arr1 = [	1,4,2,6,3,0,&apos;a&apos;,&apos;c&apos;,&apos;b&apos;,9,7];//非对象排序var by1 = function (a , b) &amp;#123;	if ( a ===  b) &amp;#123;		return 0;	&amp;#125;">
+<meta property="og:updated_time" content="2017-03-02T11:59:45.271Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建一个博客网站">
-<meta name="twitter:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta name="twitter:title" content="字符、数字以及对象排序">
+<meta name="twitter:description" content="今天看了一些关于数组对象、字符串、数字以及对象的排序方法。这里总结一下
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
+数字、字符串排序1234567891011121314151617181920var arr1 = [	1,4,2,6,3,0,&apos;a&apos;,&apos;c&apos;,&apos;b&apos;,9,7];//非对象排序var by1 = function (a , b) &amp;#123;	if ( a ===  b) &amp;#123;		return 0;	&amp;#125;">
 
 
 
@@ -145,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/"/>
+  <link rel="canonical" href="https://fututer.github.io/2017/03/02/字符、数字以及对象排序/"/>
 
 
 
 
 
-  <title> Hexo搭建一个博客网站 | MoHan </title>
+  <title> 字符、数字以及对象排序 | MoHan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -282,7 +282,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
+  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2017/03/02/字符、数字以及对象排序/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="吴晗(Mo Han)">
@@ -306,7 +306,7 @@
             
             
               
-                Hexo搭建一个博客网站
+                字符、数字以及对象排序
               
             
           </h1>
@@ -319,8 +319,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-26T15:48:13+08:00">
-                2016-11-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-02T19:54:12+08:00">
+                2017-03-02
               </time>
             
 
@@ -338,8 +338,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -353,8 +353,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/26/Hexo搭建一个博客网站/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/Hexo搭建一个博客网站/" itemprop="commentCount"></span>
+                <a href="/2017/03/02/字符、数字以及对象排序/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/02/字符、数字以及对象排序/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,7 +364,7 @@
 
           
           
-             <span id="/2016/11/26/Hexo搭建一个博客网站/" class="leancloud_visitors" data-flag-title="Hexo搭建一个博客网站">
+             <span id="/2017/03/02/字符、数字以及对象排序/" class="leancloud_visitors" data-flag-title="字符、数字以及对象排序">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,30 +390,10 @@
 
       
         <blockquote>
-<p>本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网</a></strong>看看文档。<br><strong>说明</strong><br>此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。</p>
+<p>今天看了一些关于数组对象、字符串、数字以及对象的排序方法。这里总结一下</p>
 </blockquote>
-<p>我使用的是NexT主题,如果喜欢的话可以点击<strong><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Hexo的NexT主题和其他配置</a></strong>查看。</p>
-<p>好了，开始了！</p>
-<h4 id="正式安装Hexo"><a href="#正式安装Hexo" class="headerlink" title="正式安装Hexo"></a>正式安装Hexo</h4><h5 id="步骤一："><a href="#步骤一：" class="headerlink" title="步骤一："></a>步骤一：</h5><p>安装 全局的hexo<br><strong>npm install hexo -g</strong></p>
-<h5 id="步骤二："><a href="#步骤二：" class="headerlink" title="步骤二："></a>步骤二：</h5><p>初始化<br>首先需要你创建一个目录，然后用命令行进到所在目录下。执行<strong>npm init</strong></p>
-<h5 id="步骤三："><a href="#步骤三：" class="headerlink" title="步骤三："></a>步骤三：</h5><p>生成静态页面<br><strong>hexo generate</strong>（hexo g也可以）</p>
-<h5 id="步骤四："><a href="#步骤四：" class="headerlink" title="步骤四："></a>步骤四：</h5><p>本地启动<br><strong>hexo server</strong><br>然后再输入<a href="localhost::4000" target="_blank" rel="external">localhost::4000</a>查看</p>
-<h4 id="配置github-让你的博客网站启动"><a href="#配置github-让你的博客网站启动" class="headerlink" title="配置github,让你的博客网站启动"></a>配置github,让你的博客网站启动</h4><h5 id="步骤一：-1"><a href="#步骤一：-1" class="headerlink" title="步骤一："></a>步骤一：</h5><p>建立Repository<br>在你的github上新建一个Repository,取名为:<strong>你的github名.github.io</strong></p>
-<h5 id="步骤二：-1"><a href="#步骤二：-1" class="headerlink" title="步骤二："></a>步骤二：</h5><p>更改你的本地初始化后的<strong>_config.yml</strong>文件,<br>改成下面这样：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"></div><div class="line"><span class="attr">     type:</span> git</div><div class="line"></div><div class="line"><span class="attr">     repo:</span> https://github.com/你的github名/你的github名.github.io.git</div><div class="line"></div><div class="line"><span class="attr">     branch:</span> master</div></pre></td></tr></table></figure></p>
-<p>然后执行：<strong>hexo deploy</strong></p>
-<h4 id="常用命令总结"><a href="#常用命令总结" class="headerlink" title="常用命令总结"></a>常用命令总结</h4><p>每次部署的步骤，可按以下三步来进行。</p>
-<p>1.hexo clean</p>
-<p>2.hexo generate</p>
-<p>3.hexo deploy</p>
-<p>一些常用命令：</p>
-<p>hexo new “postName” #新建文章</p>
-<p>hexo new page”pageName” #新建页面</p>
-<p>hexo generate #生成静态页面至public目录</p>
-<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
-<p>hexo deploy #将.deploy目录部署到GitHub</p>
-<p>hexo help # 查看帮助</p>
-<p>hexo version #查看Hexo的版本</p>
-
+<h5 id="数字、字符串排序"><a href="#数字、字符串排序" class="headerlink" title="数字、字符串排序"></a>数字、字符串排序</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr1 = [</div><div class="line">	<span class="number">1</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">3</span>,<span class="number">0</span>,<span class="string">'a'</span>,<span class="string">'c'</span>,<span class="string">'b'</span>,<span class="number">9</span>,<span class="number">7</span></div><div class="line">];</div><div class="line"></div><div class="line"><span class="comment">//非对象排序</span></div><div class="line"><span class="keyword">var</span> by1 = <span class="function"><span class="keyword">function</span> (<span class="params">a , b</span>) </span>&#123;</div><div class="line">	<span class="keyword">if</span> ( a ===  b) &#123;</div><div class="line">		<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">if</span> (<span class="keyword">typeof</span> a === <span class="keyword">typeof</span> b) &#123;</div><div class="line">		<span class="keyword">return</span> a &lt; b ? <span class="number">-1</span> : <span class="number">1</span> ; </div><div class="line">	&#125; </div><div class="line">	<span class="keyword">if</span> (<span class="keyword">typeof</span> a &lt; <span class="keyword">typeof</span> b) &#123;</div><div class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">	&#125; </div><div class="line">	<span class="keyword">if</span> (<span class="keyword">typeof</span> a &gt; <span class="keyword">typeof</span> b) &#123;</div><div class="line">		<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(arr1.sort(by1()));</div></pre></td></tr></table></figure>
+<h5 id="对象排序"><a href="#对象排序" class="headerlink" title="对象排序"></a>对象排序</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [</div><div class="line">	&#123;<span class="attr">first</span>: <span class="string">'Joe'</span>, <span class="attr">last</span> : <span class="string">'Bes'</span>&#125;,</div><div class="line">	&#123;<span class="attr">first</span>: <span class="string">'Moe'</span>, <span class="attr">last</span> : <span class="string">'How'</span>&#125;,</div><div class="line">	&#123;<span class="attr">first</span>: <span class="string">'Joe'</span>, <span class="attr">last</span> : <span class="string">'Der'</span>&#125;,</div><div class="line">	&#123;<span class="attr">first</span>: <span class="string">'She'</span>, <span class="attr">last</span> : <span class="string">'How'</span>&#125;,</div><div class="line">	&#123;<span class="attr">first</span>: <span class="string">'Cur'</span>, <span class="attr">last</span> : <span class="string">'Fin'</span>&#125;,</div><div class="line">];</div><div class="line"></div><div class="line"><span class="comment">//对象排序</span></div><div class="line"><span class="keyword">var</span> by = <span class="function"><span class="keyword">function</span> (<span class="params">name</span>) </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">o , p</span>) </span>&#123;</div><div class="line">		<span class="keyword">var</span> a , b;</div><div class="line">		<span class="comment">// console.log('o是：' + o + '   p是：' + p);</span></div><div class="line">		<span class="keyword">if</span>(<span class="keyword">typeof</span> o === <span class="string">'object'</span> &amp;&amp; <span class="keyword">typeof</span> p === <span class="string">'object'</span> &amp;&amp; o &amp;&amp; p) &#123;</div><div class="line">			<span class="comment">//console.log('o是：' + o + '   p是：' + p);</span></div><div class="line">			a = o[name];</div><div class="line">			b = p[name];</div><div class="line">			<span class="built_in">console</span>.log(a);</div><div class="line">			<span class="keyword">if</span>(a === b) &#123;</div><div class="line">				<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span> a === <span class="keyword">typeof</span> b) &#123;</div><div class="line">				<span class="keyword">return</span> a &lt; b ? <span class="number">-1</span> : <span class="number">1</span> ;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span> a &lt; <span class="keyword">typeof</span> b) &#123;</div><div class="line">				<span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span> a &gt; <span class="keyword">typeof</span> b) &#123;</div><div class="line">				<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			<span class="built_in">console</span>.log(<span class="string">'cuowu'</span>);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(arr.sort(by(<span class="string">'first'</span>)));</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -436,7 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -445,8 +425,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/25/HTML5-CSS3-布局/" rel="next" title="HTML5+CSS3 布局">
-                <i class="fa fa-chevron-left"></i> HTML5+CSS3 布局
+              <a href="/2017/02/23/JavaScript的一些小技巧/" rel="next" title="JavaScript的一些小技巧">
+                <i class="fa fa-chevron-left"></i> JavaScript的一些小技巧
               </a>
             
           </div>
@@ -454,10 +434,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/04/对一个项目的理解/" rel="prev" title="对一个项目的理解">
-                对一个项目的理解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -483,8 +459,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/26/Hexo搭建一个博客网站/"
-           data-title="Hexo搭建一个博客网站" data-url="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
+      <div class="ds-thread" data-thread-key="2017/03/02/字符、数字以及对象排序/"
+           data-title="字符、数字以及对象排序" data-url="https://fututer.github.io/2017/03/02/字符、数字以及对象排序/">
       </div>
     
   </div>
@@ -610,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#正式安装Hexo"><span class="nav-number">1.</span> <span class="nav-text">正式安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一："><span class="nav-number">1.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二："><span class="nav-number">1.2.</span> <span class="nav-text">步骤二：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤三："><span class="nav-number">1.3.</span> <span class="nav-text">步骤三：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤四："><span class="nav-number">1.4.</span> <span class="nav-text">步骤四：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置github-让你的博客网站启动"><span class="nav-number">2.</span> <span class="nav-text">配置github,让你的博客网站启动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一：-1"><span class="nav-number">2.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二：-1"><span class="nav-number">2.2.</span> <span class="nav-text">步骤二：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令总结"><span class="nav-number">3.</span> <span class="nav-text">常用命令总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#数字、字符串排序"><span class="nav-number">1.</span> <span class="nav-text">数字、字符串排序</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#对象排序"><span class="nav-number">2.</span> <span class="nav-text">对象排序</span></a></li></ol></div>
             
 
           </div>
