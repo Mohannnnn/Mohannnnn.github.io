@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaSscript," />
+  <meta name="keywords" content="MongoDB," />
 
 
 
@@ -102,19 +102,26 @@
 
 
 
-<meta name="description" content="在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。
-js原型总">
+<meta name="description" content="什么是mongoDB?
+
+MongoDB是基于文档的存储的（而非表），是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bjson格式，因此可以存储比较复杂的数据类型。模式自由(schema-free)，意味着对于存储在MongoDB数据库中的文件，我们不需要知道它的任何结构定义。如果需要的话，你完全可以把不同结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js 原型及原型链">
-<meta property="og:url" content="https://fututer.github.io/2016/11/23/js-原型及原型链/index.html">
+<meta property="og:title" content="windows下MongoDB配置及指令">
+<meta property="og:url" content="https://fututer.github.io/2018/01/21/windows下MongoDB配置及指令/index.html">
 <meta property="og:site_name" content="MoHan">
-<meta property="og:description" content="在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。
-js原型总">
-<meta property="og:updated_time" content="2016-11-22T12:18:10.726Z">
+<meta property="og:description" content="什么是mongoDB?
+
+MongoDB是基于文档的存储的（而非表），是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bjson格式，因此可以存储比较复杂的数据类型。模式自由(schema-free)，意味着对于存储在MongoDB数据库中的文件，我们不需要知道它的任何结构定义。如果需要的话，你完全可以把不同结">
+<meta property="og:image" content="https://fututer.github.io/images/mongoDB_1.png">
+<meta property="og:image" content="https://fututer.github.io/images/mongoDB_2.png">
+<meta property="og:image" content="https://fututer.github.io/images/mongoDB_3.png">
+<meta property="og:updated_time" content="2018-01-21T09:03:03.372Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="js 原型及原型链">
-<meta name="twitter:description" content="在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。
-js原型总">
+<meta name="twitter:title" content="windows下MongoDB配置及指令">
+<meta name="twitter:description" content="什么是mongoDB?
+
+MongoDB是基于文档的存储的（而非表），是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bjson格式，因此可以存储比较复杂的数据类型。模式自由(schema-free)，意味着对于存储在MongoDB数据库中的文件，我们不需要知道它的任何结构定义。如果需要的话，你完全可以把不同结">
+<meta name="twitter:image" content="https://fututer.github.io/images/mongoDB_1.png">
 
 
 
@@ -142,13 +149,13 @@ js原型总">
 
 
 
-  <link rel="canonical" href="https://fututer.github.io/2016/11/23/js-原型及原型链/"/>
+  <link rel="canonical" href="https://fututer.github.io/2018/01/21/windows下MongoDB配置及指令/"/>
 
 
 
 
 
-  <title> js 原型及原型链 | MoHan </title>
+  <title> windows下MongoDB配置及指令 | MoHan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +286,7 @@ js原型总">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/11/23/js-原型及原型链/">
+  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2018/01/21/windows下MongoDB配置及指令/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="吴晗(Mo Han)">
@@ -303,7 +310,7 @@ js原型总">
             
             
               
-                js 原型及原型链
+                windows下MongoDB配置及指令
               
             
           </h1>
@@ -316,8 +323,8 @@ js原型总">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-23T19:45:11+08:00">
-                2016-11-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-21T15:04:15+08:00">
+                2018-01-21
               </time>
             
 
@@ -335,8 +342,8 @@ js原型总">
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
+                  <a href="/categories/MongoDB/" itemprop="url" rel="index">
+                    <span itemprop="name">MongoDB</span>
                   </a>
                 </span>
 
@@ -350,8 +357,8 @@ js原型总">
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/23/js-原型及原型链/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/23/js-原型及原型链/" itemprop="commentCount"></span>
+                <a href="/2018/01/21/windows下MongoDB配置及指令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/21/windows下MongoDB配置及指令/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,7 +368,7 @@ js原型总">
 
           
           
-             <span id="/2016/11/23/js-原型及原型链/" class="leancloud_visitors" data-flag-title="js 原型及原型链">
+             <span id="/2018/01/21/windows下MongoDB配置及指令/" class="leancloud_visitors" data-flag-title="windows下MongoDB配置及指令">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -386,39 +393,174 @@ js原型总">
       
 
       
-        <blockquote>
-<p>在ES6之前，javascript是没有像java中class类这样的思想的。但是却有一种叫做原型的思想，在原型对象中我们可以将公有方法放在其中， 多个子对象可以共享这里面的方法，且不会互相冲突。与其说像java的继承，还不如说是借鉴了java语言的思想。因为js原型对象都是由对象指针 通过原型链指向原型对象的属性，也就是改变父对象的公有属性，子对象继承后也会发生改变(由指针指向)。</p>
-<p><strong>js原型总结</strong></p>
-<p>1.所有的对象都有<code>__proto__</code>属性，该属性指向该对象的原型<br>2.所有的函数对象都有<code>prototype</code>属性，该属性的值会被赋值给由该函数创建的子对象(例如由它new一个出来的实例)的<code>__proto__</code>属性<br>3.所有的函数对象的<code>__proto__</code>属性指向的是<code>Function.prototype(function () {})</code><br>4.所有的原型对象都有<code>constructor</code>属性，该属性指向该原型对象所对应的构造函数<br>5.函数对象和原型对象通过<code>prototype</code>和<code>constructor</code>相关联<br>6.函数的原型对象是指向的是Object,可以说一切的原型都是来自于Object,而Object的原型对象是null,所以说原型链最终的终点是<code>null</code></p>
-<p>下面我会通过一个例子来说明原型及原型对象</p>
+        <p>什么是mongoDB?</p>
+<blockquote>
+<p>MongoDB是基于文档的存储的（而非表），是一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似json的bjson格式，因此可以存储比较复杂的数据类型。模式自由(schema-free)，意味着对于存储在MongoDB数据库中的文件，我们不需要知道它的任何结构定义。如果需要的话，你完全可以把不同结构的文件存储在同一个数据库里。Mongo最大的特点是他支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，几乎可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。</p>
 </blockquote>
-<h5 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h5><p>我们定义一个SuperType(超级函数)，和一个（一般函数），在将SuperType函数的属性和原型中的方法都继承过来。</p>
-<h6 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h6><p><code>.js代码</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span> , <span class="string">'blue'</span> , <span class="string">'green'</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span> (<span class="params">name , age</span>) </span>&#123;</div><div class="line">    <span class="comment">//继承SuperType的构造函数的属性，原型对象中的方法也是继承了</span></div><div class="line">    SuperType.call(<span class="keyword">this</span> , name);<span class="comment">//第二次调用SuperType</span></div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();<span class="comment">//第一次调用SuperType</span></div><div class="line">SubType.prototype.constructor =  SubType;</div><div class="line">SubType.prototype.sayName = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> newType = <span class="keyword">new</span> SubType(<span class="string">'wu'</span>,<span class="number">20</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(SuperType.prototype);<span class="comment">//输出SuperType&#123;...&#125;,原型对象</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__);<span class="comment">//输出function()&#123;&#125;</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__.__proto__);<span class="comment">//输出Object()&#123;&#125;</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.__proto__.__proto__.__proto__);<span class="comment">//输出null</span></div><div class="line"><span class="built_in">console</span>.log(SuperType.prototype.constructor);<span class="comment">//输出function SuperType () &#123;...&#125;</span></div><div class="line"><span class="built_in">console</span>.log(newType.constructor);<span class="comment">//输出function SubType () &#123;...&#125;</span></div><div class="line"><span class="built_in">console</span>.log(newType.prototype);<span class="comment">//输出undefined</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__);<span class="comment">//输出subType.prototype,即subType的原型对象</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.constructor);<span class="comment">//输出function subType () &#123;...&#125;构造函数</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.__proto__);<span class="comment">//输出SuperType.prototype,即superType的原型对象</span></div><div class="line"><span class="built_in">console</span>.log(newType.__proto__.__proto__.__proto__);<span class="comment">//输出Object()&#123;&#125;</span></div></pre></td></tr></table></figure></p>
-<h6 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h6><p>1.输出SuperType{…}。因为输出的是SuperType的原型对像</p>
-<p>2.输出function () {}。因为函数的<code>__proto__</code>属性是指向的是Function的原型对象，即Function.prototype</p>
-<p>3.输出Object(){}。因为Function.prototype的原型是Object.</p>
-<p>4.输出null。因为Object的原型是null</p>
-<p>5.输出function SuperType () {…}。因为SuperType的原型对象的<code>constructor</code>是指向的该函数的构造函数</p>
-<p>6.输出function SubType () {…}。因为newType是SubType的实例，所以它的<code>constructor</code>自然而然指向的是SubType的构造函数</p>
-<p>7.输出undefined。实例是没有原型对象的。</p>
-<p>8.输出subType.prototype,即subType的原型对象。因为实例的<code>__proto__</code>属性是指向的是父函数的原型对象</p>
-<p>9.输出function subType () {…}构造函数。因为原型对象的<code>constructor</code>是指向的是构造函数</p>
-<p>10.输出superType.prototype,即superType的原型对象。newType.<code>__proto__</code>是指向subType.prototype,而subType的原型对象是SuperType的一个实例,subType.prototype.<code>__proto__ ``=== SuperType.prototype,所以newType.</code><strong>proto</strong><code>.</code><strong>proto</strong>` === SuperType.prototype</p>
-<p>11.输出Object(){}。因为SuperType的原型对象的原型是Object(){}</p>
-<h5 id="附：对new操作符的认识"><a href="#附：对new操作符的认识" class="headerlink" title="附：对new操作符的认识"></a>附：对new操作符的认识</h5><blockquote>
-<p>new 的过程分为三步</p>
-<p>第一步：初始化一个空对象<br>第二步：让空对象的<code>__proto__</code>等于原函数的<code>prototype</code><br>第三步：调用构造函数call/apply初始化空对象</p>
-<p>var m = new SuperType(‘wu’);</p>
+<h5 id="一、配置及启动"><a href="#一、配置及启动" class="headerlink" title="一、配置及启动"></a>一、配置及启动</h5><p>1.首先是开始下载安装包<a href="https://www.mongodb.com/download-center#community" target="_blank" rel="external">官网</a>，下载完成后即可以安装，我是安装在G盘，目录为G:\mongoDB，下面的安装皆是在此目录下完成。<br>2.<strong>新建三个文件</strong>。因为mongoDB安装后是没有数据目录和日志目录，所以我们在此安装目录下G:\mongoDB，新建log和db目录，db是数据目录，log是日志目录，然后在log目录下新建一个名为mongo.log的文件。<br>3.在G:\mongoDB目录下，新建配置文件mongo.cfg，内容为：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">systemLog:</div><div class="line"> 		destination: file</div><div class="line"> 		path: G:\mongoDB\log\mongo.log</div><div class="line">storage:</div><div class="line"> 		dbPath: G:\mongoDB\db</div></pre></td></tr></table></figure></p>
+<p>注意路径需要替换为你自己的路径哦.<br>4.基本工作做完之后，以<code>管理员</code>身份启动cmd，我们cd到我们的目录下的<code>bin</code>文件下，然后输入以下指令：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongo  "G:\mongoDB\mongo.cfg"</div></pre></td></tr></table></figure></p>
+<p><img src="/images/mongoDB_1.png" alt="mongoDB_1"><br>然后启动服务：<code>net start MongoDB</code><br><img src="/images/mongoDB_2.png" alt="mongoDB_2"><br>在进程中可以看到已启动：<br><img src="/images/mongoDB_3.png" alt="mongoDB_3"><br>5.配置可视化<br>我用的可视化为<a href="https://link.jianshu.com/?t=https://robomongo.org/download" target="_blank" rel="external">Robmongo</a>,感兴趣可以自行下载。<br>6.全局变量配置<br>在全局变量环境path中新增路径，比如我的安装路径G:\mongoDB\bin</p>
+<h5 id="二、MongoDB指令"><a href="#二、MongoDB指令" class="headerlink" title="二、MongoDB指令"></a>二、MongoDB指令</h5><blockquote>
+<p>这里的指令只是一些比较基础且常用的方法，如果想学习更深入的方法，请自行去官网学习。</p>
 </blockquote>
-<h6 id="代码：-1"><a href="#代码：-1" class="headerlink" title="代码："></a>代码：</h6><p><code>.js代码</code></p>
-<pre><code class="js"><span class="number">1.</span><span class="keyword">var</span> m = {}
+<h6 id="数据库常用命令"><a href="#数据库常用命令" class="headerlink" title="数据库常用命令"></a>数据库常用命令</h6><p>1、切换/创建数据库</p>
+<p> use yourDB;  当创建一个集合(table)的时候会自动创建当前数据库</p>
+<p>2、查询所有数据库</p>
+<p> show dbs;</p>
+<p>3、删除当前使用数据库</p>
+<p> db.dropDatabase();</p>
+<p>4、从指定主机上克隆数据库</p>
+<p> db.cloneDatabase(“127.0.0.1”); 将指定机器上的数据库的数据克隆到当前数据库</p>
+<p>5、从指定的机器上复制指定数据库数据到某个数据库</p>
+<p> db.copyDatabase(“mydb”, “temp”, “127.0.0.1”);将本机的mydb的数据复制到temp数据库中</p>
+<p>6、修复当前数据库</p>
+<p> db.repairDatabase();</p>
+<p>7、查看当前使用的数据库</p>
+<p> db.getName();</p>
+<p> db; db和getName方法是一样的效果，都可以查询当前使用的数据库</p>
+<p>8、显示当前db状态</p>
+<p> db.stats();</p>
+<p>9、当前db版本</p>
+<p> db.version();</p>
+<p>10、查看当前db的链接机器地址</p>
+<p> db.getMongo();</p>
+<p>Collection聚集集合</p>
+<p>1、创建一个聚集集合（table）</p>
+<p> db.createCollection(“collName”, {size: 20, capped: 5, max: 100});</p>
+<p>2、得到指定名称的聚集集合（table）</p>
+<p> db.getCollection(“account”);</p>
+<p>3、得到当前db的所有聚集集合</p>
+<p> db.getCollectionNames();</p>
+<p>4、显示当前db所有聚集索引的状态</p>
+<p> db.printCollectionStats();</p>
+<p> 用户相关</p>
+<p>1、添加一个用户</p>
+<p> db.addUser(“name”);</p>
+<p> db.addUser(“userName”, “pwd123”, true); 添加用户、设置密码、是否只读</p>
+<p>2、数据库认证、安全模式</p>
+<p> db.auth(“userName”, “123123”);</p>
+<p>3、显示当前所有用户</p>
+<p> show users;</p>
+<p>4、删除用户</p>
+<p> db.removeUser(“userName”);</p>
+<h6 id="聚集集合查询"><a href="#聚集集合查询" class="headerlink" title="聚集集合查询"></a>聚集集合查询</h6><p>1、查询所有记录</p>
+<p>db.userInfo.find();</p>
+<p>相当于：select* from userInfo;</p>
+<p>默认每页显示20条记录，当显示不下的情况下，可以用it迭代命令查询下一页数据。注意：键入it命令不能带“；”</p>
+<p>但是你可以设置每页显示数据的大小，用DBQuery.shellBatchSize= 50;这样每页就显示50条记录了。</p>
+<p>2、查询去掉后的当前聚集集合中的某列的重复数据</p>
+<p>db.userInfo.distinct(“name”);</p>
+<p>会过滤掉name中的相同数据</p>
+<p>相当于：select distict name from userInfo;</p>
+<p>3、查询age = 22的记录</p>
+<p>db.userInfo.find({“age”: 22});</p>
+<p>相当于： select * from userInfo where age = 22;</p>
+<p>4、查询age &gt; 22的记录</p>
+<p>db.userInfo.find({age: {$gt: 22}});</p>
+<p>相当于：select * from userInfo where age &gt;22;</p>
+<p>5、查询age &lt; 22的记录</p>
+<p>db.userInfo.find({age: {$lt: 22}});</p>
+<p>相当于：select * from userInfo where age &lt;22;</p>
+<p>6、查询age &gt;= 25的记录</p>
+<p>db.userInfo.find({age: {$gte: 25}});</p>
+<p>相当于：select * from userInfo where age &gt;= 25;</p>
+<p>7、查询age &lt;= 25的记录</p>
+<p>db.userInfo.find({age: {$lte: 25}});</p>
+<p>8、查询age &gt;= 23 并且 age &lt;= 26</p>
+<p>db.userInfo.find({age: {$gte: 23, $lte: 26}});</p>
+<p>9、查询name中包含 mongo的数据</p>
+<p>db.userInfo.find({name: /mongo/});</p>
+<p>//相当于%%</p>
+<p>select * from userInfo where name like ‘%mongo%’;</p>
+<p>10、查询name中以mongo开头的</p>
+<p>db.userInfo.find({name: /^mongo/});</p>
+<p>select * from userInfo where name like ‘mongo%’;</p>
+<p>11、查询指定列name、age数据</p>
+<p>db.userInfo.find({}, {name: 1, age: 1});</p>
+<p>相当于：select name, age from userInfo;</p>
+<p>当然name也可以用true或false,当用ture的情况下河name:1效果一样，如果用false就是排除name，显示name以外的列信息。</p>
+<p>12、查询指定列name、age数据, age &gt; 25</p>
+<p>db.userInfo.find({age: {$gt: 25}}, {name: 1, age: 1});</p>
+<p>相当于：select name, age from userInfo where age &gt;25;</p>
+<p>13、按照年龄排序</p>
+<p>升序：db.userInfo.find().sort({age: 1});</p>
+<p>降序：db.userInfo.find().sort({age: -1});</p>
+<p>14、查询name = zhangsan, age = 22的数据</p>
+<p>db.userInfo.find({name: ‘zhangsan’, age: 22});</p>
+<p>相当于：select * from userInfo where name = ‘zhangsan’ and age = ‘22’;</p>
+<p>15、查询前5条数据</p>
+<p>db.userInfo.find().limit(5);</p>
+<p>相当于：selecttop 5 * from userInfo;</p>
+<p>16、查询10条以后的数据</p>
+<p>db.userInfo.find().skip(10);</p>
+<p>相当于：select * from userInfo where id not in (</p>
+<p>selecttop 10 * from userInfo</p>
+<p>);</p>
+<p>17、查询在5-10之间的数据</p>
+<p>db.userInfo.find().limit(10).skip(5);</p>
+<p>可用于分页，limit是pageSize，skip是第几页*pageSize</p>
+<p>18、or与 查询</p>
+<p>db.userInfo.find({$or: [{age: 22}, {age: 25}]});</p>
+<p>相当于：select * from userInfo where age = 22 or age = 25;</p>
+<p>19、查询第一条数据</p>
+<p>db.userInfo.findOne();</p>
+<p>相当于：selecttop 1 * from userInfo;</p>
+<p>db.userInfo.find().limit(1);</p>
+<p>20、查询某个结果集的记录条数</p>
+<p>db.userInfo.find({age: {$gte: 25}}).count();</p>
+<p>相当于：select count(*) from userInfo where age &gt;= 20;</p>
+<p>如果要返回限制之后的记录数量，要使用count(true)或者count(非0)<br>db.users.find().skip(10).limit(5).count(true);</p>
+<p>21、按照某列进行排序</p>
+<p>db.userInfo.find({sex: {$exists: true}}).count();</p>
+<p>相当于：select count(sex) from userInfo;</p>
+<h6 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h6><p>1、创建索引</p>
+<p>db.userInfo.ensureIndex({name: 1});</p>
+<p>db.userInfo.ensureIndex({name: 1, ts: -1});</p>
+<p>2、查询当前聚集集合所有索引</p>
+<p>db.userInfo.getIndexes();</p>
+<p>3、查看总索引记录大小</p>
+<p>db.userInfo.totalIndexSize();</p>
+<p>4、读取当前集合的所有index信息</p>
+<p>db.users.reIndex();</p>
+<p>5、删除指定索引</p>
+<p>db.users.dropIndex(“name_1”);</p>
+<p>6、删除所有索引索引</p>
+<p>db.users.dropIndexes();</p>
+<h6 id="修改、添加、删除集合数据"><a href="#修改、添加、删除集合数据" class="headerlink" title="修改、添加、删除集合数据"></a>修改、添加、删除集合数据</h6><p>1、添加</p>
+<p>db.users.save({name: ‘zhangsan’, age: 25, sex: true});</p>
+<p>添加的数据的数据列，没有固定，根据添加的数据为准</p>
+<p>2、修改</p>
+<p>db.collection.update(criteria, objNew, upsert, multi )</p>
+<p>criteria:update的查询条件，类似sql update查询内where后面的</p>
+<p>objNew:update的对象和一些更新的操作符（如$,$inc…）等，也可以理解为sql update查询内set后面的。</p>
+<p>upsert : 如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。</p>
+<p>multi : mongodb默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。</p>
+<p>db.users.update({age: 25}, {$set: {name: ‘changeName’}}, false, true);</p>
+<p>相当于：update users set name = ‘changeName’ where age = 25;</p>
+<p>db.users.update({name: ‘Lisi’}, {$inc: {age: 50}}, false, true);</p>
+<p>相当于：update users set age = age + 50 where name = ‘Lisi’;</p>
+<p>db.users.update({name: ‘Lisi’}, {$inc: {age: 50}, $set: {name: ‘hoho’}}, false, true);</p>
+<p>相当于：update users set age = age + 50, name = ‘hoho’ where name = ‘Lisi’;</p>
+<p>3、删除</p>
+<p>db.users.remove({age: 132});</p>
+<p>4、查询修改删除</p>
+<p>db.users.findAndModify({<br>    query: {age: {$gte: 25}},</p>
+<pre><code>sort: {age: -1},
 
-<span class="number">2.</span>m.__proto__ = SuperType.protoType
+update: {$set: {name: &apos;a2&apos;}, $inc: {age: 2}},
 
-<span class="number">3.</span>SuperType.call(<span class="keyword">this</span>,<span class="string">'wu'</span>)
-</code></pre>
-<p><strong>说明：</strong></p>
-<p>m的原型对象设置为SuperType的原型对象后，m也就能够调用SuperType的原型里面的方法了。</p>
+remove: true
+</code></pre><p>});</p>
+<p>db.runCommand({ findandmodify : “users”,<br>    query: {age: {$gte: 25}},</p>
+<pre><code>sort: {age: -1},
+
+update: {$set: {name: &apos;a2&apos;}, $inc: {age: 2}},
+
+remove: true
+</code></pre><p>});</p>
+<blockquote>
+<p>题外话：很久没有写博客了，今年开始每星期写一篇，坚持！！！。</p>
+</blockquote>
 
       
     </div>
@@ -442,7 +584,7 @@ js原型总">
       
         <div class="post-tags">
           
-            <a href="/tags/JavaSscript/" rel="tag"># JavaSscript</a>
+            <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
           
         </div>
       
@@ -451,8 +593,8 @@ js原型总">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/22/js-Closure-闭包/" rel="next" title="js Closure(闭包)">
-                <i class="fa fa-chevron-left"></i> js Closure(闭包)
+              <a href="/2017/03/02/字符、数字以及对象排序/" rel="next" title="字符、数字以及对象排序">
+                <i class="fa fa-chevron-left"></i> 字符、数字以及对象排序
               </a>
             
           </div>
@@ -460,10 +602,6 @@ js原型总">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/24/js-Promise异步执行/" rel="prev" title="js Promise异步执行">
-                js Promise异步执行 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -489,8 +627,8 @@ js原型总">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/23/js-原型及原型链/"
-           data-title="js 原型及原型链" data-url="https://fututer.github.io/2016/11/23/js-原型及原型链/">
+      <div class="ds-thread" data-thread-key="2018/01/21/windows下MongoDB配置及指令/"
+           data-title="windows下MongoDB配置及指令" data-url="https://fututer.github.io/2018/01/21/windows下MongoDB配置及指令/">
       </div>
     
   </div>
@@ -616,7 +754,7 @@ js原型总">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#例如："><span class="nav-number">1.</span> <span class="nav-text">例如：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码："><span class="nav-number">1.1.</span> <span class="nav-text">代码：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#说明："><span class="nav-number">1.2.</span> <span class="nav-text">说明：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#附：对new操作符的认识"><span class="nav-number">2.</span> <span class="nav-text">附：对new操作符的认识</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#代码：-1"><span class="nav-number">2.1.</span> <span class="nav-text">代码：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、配置及启动"><span class="nav-number">1.</span> <span class="nav-text">一、配置及启动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、MongoDB指令"><span class="nav-number">2.</span> <span class="nav-text">二、MongoDB指令</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#数据库常用命令"><span class="nav-number">2.1.</span> <span class="nav-text">数据库常用命令</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#聚集集合查询"><span class="nav-number">2.2.</span> <span class="nav-text">聚集集合查询</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#索引"><span class="nav-number">2.3.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改、添加、删除集合数据"><span class="nav-number">2.4.</span> <span class="nav-text">修改、添加、删除集合数据</span></a></li></ol></li></ol></div>
             
 
           </div>
