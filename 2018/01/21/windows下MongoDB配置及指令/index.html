@@ -115,7 +115,7 @@ MongoDB是基于文档的存储的（而非表），是一个介于关系数据�
 <meta property="og:image" content="https://fututer.github.io/images/mongoDB_1.png">
 <meta property="og:image" content="https://fututer.github.io/images/mongoDB_2.png">
 <meta property="og:image" content="https://fututer.github.io/images/mongoDB_3.png">
-<meta property="og:updated_time" content="2018-01-21T09:03:03.372Z">
+<meta property="og:updated_time" content="2018-01-21T09:05:58.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows下MongoDB配置及指令">
 <meta name="twitter:description" content="什么是mongoDB?
@@ -543,21 +543,8 @@ MongoDB是基于文档的存储的（而非表），是一个介于关系数据�
 <p>相当于：update users set age = age + 50, name = ‘hoho’ where name = ‘Lisi’;</p>
 <p>3、删除</p>
 <p>db.users.remove({age: 132});</p>
-<p>4、查询修改删除</p>
-<p>db.users.findAndModify({<br>    query: {age: {$gte: 25}},</p>
-<pre><code>sort: {age: -1},
-
-update: {$set: {name: &apos;a2&apos;}, $inc: {age: 2}},
-
-remove: true
-</code></pre><p>});</p>
-<p>db.runCommand({ findandmodify : “users”,<br>    query: {age: {$gte: 25}},</p>
-<pre><code>sort: {age: -1},
-
-update: {$set: {name: &apos;a2&apos;}, $inc: {age: 2}},
-
-remove: true
-</code></pre><p>});</p>
+<p>4、查询修改删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">db.users.findAndModify(&#123;</div><div class="line">    query: &#123;age: &#123;$gte: 25&#125;&#125;,</div><div class="line"></div><div class="line">    sort: &#123;age: -1&#125;,</div><div class="line"></div><div class="line">    update: &#123;$set: &#123;name: &apos;a2&apos;&#125;, $inc: &#123;age: 2&#125;&#125;,</div><div class="line"></div><div class="line">    remove: true</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">db.runCommand(&#123; findandmodify : &quot;users&quot;,</div><div class="line"></div><div class="line">    query: &#123;age: &#123;$gte: 25&#125;&#125;,</div><div class="line"></div><div class="line">    sort: &#123;age: -1&#125;,</div><div class="line"></div><div class="line">    update: &#123;$set: &#123;name: &apos;a2&apos;&#125;, $inc: &#123;age: 2&#125;&#125;,</div><div class="line"></div><div class="line">    remove: true</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <blockquote>
 <p>题外话：很久没有写博客了，今年开始每星期写一篇，坚持！！！。</p>
 </blockquote>
