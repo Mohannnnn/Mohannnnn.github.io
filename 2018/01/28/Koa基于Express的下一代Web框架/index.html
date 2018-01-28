@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="Node," />
 
 
 
@@ -102,22 +102,25 @@
 
 
 
-<meta name="description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta name="description" content="这几天开始写毕设，需要写一个web的服务器，然后我听说Koa是基于Express的下一代Web框架，所以我跑去官网看了一下，然后也在各个大神的博客上面浏览了一下，然后自己也动手用了了一下，发现确实很简洁，而且用起来也很舒服,所以今天把一些安装以及使用教程写下来。本篇我使用的是koa-generator,这是一个自动生成整个koa项目的工具。注意：node版本&amp;gt;v7.6版本
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
+1 安装1.1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo搭建一个博客网站">
-<meta property="og:url" content="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/index.html">
+<meta property="og:title" content="Koa基于Express的下一代Web框架">
+<meta property="og:url" content="https://fututer.github.io/2018/01/28/Koa基于Express的下一代Web框架/index.html">
 <meta property="og:site_name" content="MoHan">
-<meta property="og:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta property="og:description" content="这几天开始写毕设，需要写一个web的服务器，然后我听说Koa是基于Express的下一代Web框架，所以我跑去官网看了一下，然后也在各个大神的博客上面浏览了一下，然后自己也动手用了了一下，发现确实很简洁，而且用起来也很舒服,所以今天把一些安装以及使用教程写下来。本篇我使用的是koa-generator,这是一个自动生成整个koa项目的工具。注意：node版本&amp;gt;v7.6版本
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
-<meta property="og:updated_time" content="2016-11-26T08:38:35.922Z">
+1 安装1.1">
+<meta property="og:image" content="https://fututer.github.io/images/Node_1.png">
+<meta property="og:image" content="https://fututer.github.io/images/Node_2.png">
+<meta property="og:updated_time" content="2018-01-28T12:35:36.890Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo搭建一个博客网站">
-<meta name="twitter:description" content="本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到官网看看文档。说明此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。
+<meta name="twitter:title" content="Koa基于Express的下一代Web框架">
+<meta name="twitter:description" content="这几天开始写毕设，需要写一个web的服务器，然后我听说Koa是基于Express的下一代Web框架，所以我跑去官网看了一下，然后也在各个大神的博客上面浏览了一下，然后自己也动手用了了一下，发现确实很简洁，而且用起来也很舒服,所以今天把一些安装以及使用教程写下来。本篇我使用的是koa-generator,这是一个自动生成整个koa项目的工具。注意：node版本&amp;gt;v7.6版本
 
-我使用的是NexT主题,如果喜欢的话可以点击Hexo">
+1 安装1.1">
+<meta name="twitter:image" content="https://fututer.github.io/images/Node_1.png">
 
 
 
@@ -145,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/"/>
+  <link rel="canonical" href="https://fututer.github.io/2018/01/28/Koa基于Express的下一代Web框架/"/>
 
 
 
 
 
-  <title> Hexo搭建一个博客网站 | MoHan </title>
+  <title> Koa基于Express的下一代Web框架 | MoHan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -282,7 +285,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
+  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2018/01/28/Koa基于Express的下一代Web框架/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="吴晗(Mo Han)">
@@ -306,7 +309,7 @@
             
             
               
-                Hexo搭建一个博客网站
+                Koa基于Express的下一代Web框架
               
             
           </h1>
@@ -319,8 +322,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-26T15:48:13+08:00">
-                2016-11-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-28T17:55:05+08:00">
+                2018-01-28
               </time>
             
 
@@ -338,8 +341,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
                   </a>
                 </span>
 
@@ -353,8 +356,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/11/26/Hexo搭建一个博客网站/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/26/Hexo搭建一个博客网站/" itemprop="commentCount"></span>
+                <a href="/2018/01/28/Koa基于Express的下一代Web框架/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/28/Koa基于Express的下一代Web框架/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -364,7 +367,7 @@
 
           
           
-             <span id="/2016/11/26/Hexo搭建一个博客网站/" class="leancloud_visitors" data-flag-title="Hexo搭建一个博客网站">
+             <span id="/2018/01/28/Koa基于Express的下一代Web框架/" class="leancloud_visitors" data-flag-title="Koa基于Express的下一代Web框架">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,30 +393,29 @@
 
       
         <blockquote>
-<p>本来自己是有一个在腾讯云服务器上的博客网站的，但是面试的时候发现很多人的博客网站都是自己搭建的。所以自己也去动手搭了一个。在此，把自己的经验写了下来，分享给大家。大家一可以到<strong><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">官网</a></strong>看看文档。<br><strong>说明</strong><br>此博客是基于github托管的，所以还没有github的小伙伴，赶快去注册一个哦！还有指令是基于Node,git的,所以确保你的电脑里装了这两个东东。</p>
+<p>这几天开始写毕设，需要写一个web的服务器，然后我听说Koa是基于Express的下一代Web框架，所以我跑去<a href="https://koa.bootcss.com/" target="_blank" rel="external"><strong>官网</strong></a>看了一下，然后也在各个大神的博客上面浏览了一下，然后自己也动手用了了一下，发现确实很简洁，而且用起来也很舒服,所以今天把一些安装以及使用教程写下来。<br>本篇我使用的是<a href="https://link.jianshu.com/?t=https://github.com/17koa/koa-generator" target="_blank" rel="external"><strong>koa-generator</strong></a>,这是一个自动生成整个koa项目的工具。<br><strong>注意：node版本&gt;v7.6版本</strong></p>
 </blockquote>
-<p>我使用的是NexT主题,如果喜欢的话可以点击<strong><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Hexo的NexT主题和其他配置</a></strong>查看。</p>
-<p>好了，开始了！</p>
-<h4 id="正式安装Hexo"><a href="#正式安装Hexo" class="headerlink" title="正式安装Hexo"></a>正式安装Hexo</h4><h5 id="步骤一："><a href="#步骤一：" class="headerlink" title="步骤一："></a>步骤一：</h5><p>安装 全局的hexo<br><strong>npm install hexo -g</strong></p>
-<h5 id="步骤二："><a href="#步骤二：" class="headerlink" title="步骤二："></a>步骤二：</h5><p>初始化<br>首先需要你创建一个目录，然后用命令行进到所在目录下。执行<strong>npm init</strong></p>
-<h5 id="步骤三："><a href="#步骤三：" class="headerlink" title="步骤三："></a>步骤三：</h5><p>生成静态页面<br><strong>hexo generate</strong>（hexo g也可以）</p>
-<h5 id="步骤四："><a href="#步骤四：" class="headerlink" title="步骤四："></a>步骤四：</h5><p>本地启动<br><strong>hexo server</strong><br>然后再输入<a href="localhost::4000" target="_blank" rel="external">localhost::4000</a>查看</p>
-<h4 id="配置github-让你的博客网站启动"><a href="#配置github-让你的博客网站启动" class="headerlink" title="配置github,让你的博客网站启动"></a>配置github,让你的博客网站启动</h4><h5 id="步骤一：-1"><a href="#步骤一：-1" class="headerlink" title="步骤一："></a>步骤一：</h5><p>建立Repository<br>在你的github上新建一个Repository,取名为:<strong>你的github名.github.io</strong></p>
-<h5 id="步骤二：-1"><a href="#步骤二：-1" class="headerlink" title="步骤二："></a>步骤二：</h5><p>更改你的本地初始化后的<strong>_config.yml</strong>文件,<br>改成下面这样：<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"></div><div class="line"><span class="attr">     type:</span> git</div><div class="line"></div><div class="line"><span class="attr">     repo:</span> https://github.com/你的github名/你的github名.github.io.git</div><div class="line"></div><div class="line"><span class="attr">     branch:</span> master</div></pre></td></tr></table></figure></p>
-<p>然后执行：<strong>hexo deploy</strong></p>
-<h4 id="常用命令总结"><a href="#常用命令总结" class="headerlink" title="常用命令总结"></a>常用命令总结</h4><p>每次部署的步骤，可按以下三步来进行。</p>
-<p>1.hexo clean</p>
-<p>2.hexo generate</p>
-<p>3.hexo deploy</p>
-<p>一些常用命令：</p>
-<p>hexo new “postName” #新建文章</p>
-<p>hexo new page”pageName” #新建页面</p>
-<p>hexo generate #生成静态页面至public目录</p>
-<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
-<p>hexo deploy #将.deploy目录部署到GitHub</p>
-<p>hexo help # 查看帮助</p>
-<p>hexo version #查看Hexo的版本</p>
-
+<h5 id="1-安装"><a href="#1-安装" class="headerlink" title="1 安装"></a>1 安装</h5><h6 id="1-1-全局安装koa-generator"><a href="#1-1-全局安装koa-generator" class="headerlink" title="1.1 全局安装koa-generator"></a>1.1 全局安装koa-generator</h6><p><code>npm install koa-generator -g</code></p>
+<h6 id="1-2-使用koa-generator生成koa2项目"><a href="#1-2-使用koa-generator生成koa2项目" class="headerlink" title="1.2 使用koa-generator生成koa2项目"></a>1.2 使用koa-generator生成koa2项目</h6><p><code>koa2 koa-demos</code></p>
+<h6 id="1-3-cd到创建的目录下"><a href="#1-3-cd到创建的目录下" class="headerlink" title="1.3 cd到创建的目录下"></a>1.3 cd到创建的目录下</h6><p><code>cd koa-demos</code><br><code>npm install</code></p>
+<h6 id="1-4-启动项目"><a href="#1-4-启动项目" class="headerlink" title="1.4 启动项目"></a>1.4 启动项目</h6><p><code>npm start</code><br><img src="/images/Node_1.png" alt="Node_1"><br>项目结构图：<br><img src="/images/Node_2.png" alt="Node_2"></p>
+<h5 id="2-基本用法"><a href="#2-基本用法" class="headerlink" title="2 基本用法"></a>2 基本用法</h5><p>官网上面也有详细的列子<a href="https://github.com/17koa/koa2-demo" target="_blank" rel="external"><strong>koa-demo</strong></a></p>
+<h6 id="2-1-API之Context"><a href="#2-1-API之Context" class="headerlink" title="2.1 API之Context"></a>2.1 API之Context</h6><p>Koa Context 将 node 的 request 和 response 对象封装到单个对象中，为编写 Web 应用程序和 API 提供了许多有用的方法。 这些操作在 HTTP 服务器开发中频繁使用，它们被添加到此级别而不是更高级别的框架，这将强制中间件重新实现此通用功能。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">app.use(async ctx =&gt; &#123;</div><div class="line">  ctx; // 这是 Context</div><div class="line">  ctx.request; // 这是 koa Request</div><div class="line">  ctx.response; // 这是 koa Response</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>ctx.req<br>Node 的 request 对象.</p>
+<p>ctx.res<br>Node 的 response 对象.</p>
+<p>ctx.request<br>koa 的 Request 对象.</p>
+<p>ctx.response<br>koa 的 Response 对象.</p>
+<p>ctx.state<br>推荐的命名空间，用于通过中间件传递信息和你的前端视图。</p>
+<p>ctx.state.user = await User.find(id);<br>ctx.app<br>应用程序实例引用</p>
+<p>ctx.cookies.get(name, [options])<br>通过 options 获取 cookie name:</p>
+<p>signed 所请求的cookie应该被签名<br>koa 使用 cookies 模块，其中只需传递参数。</p>
+<p>ctx.cookies.set(name, value, [options])<br>通过 options 设置 cookie name 的 value :<br>maxAge 一个数字表示从 Date.now() 得到的毫秒数<br>signed cookie 签名值<br>expires cookie 过期的 Date<br>path cookie 路径, 默认是’/‘<br>domain cookie 域名<br>secure 安全 cookie<br>httpOnly 服务器可访问 cookie, 默认是 true<br>overwrite 一个布尔值，表示是否覆盖以前设置的同名的 cookie (默认是 false). 如果是 true, 在同一个请求中设置相同名称的所有 Cookie（不管路径或域）是否在设置此Cookie 时从 Set-Cookie 标头中过滤掉。<br>koa 使用传递简单参数的 cookies 模块。</p>
+<p>ctx.throw([status], [msg], [properties])<br>Helper 方法抛出一个 .status 属性默认为 500 的错误，这将允许 Koa 做出适当地响应。<br>允许以下组合：<br>ctx.throw(400);<br>ctx.throw(400, ‘name required’);<br>ctx.throw(400, ‘name required’, { user: user });<br>例如 ctx.throw(400, ‘name required’) 等效于:<br>const err = new Error(‘name required’);<br>err.status = 400;<br>err.expose = true;<br>throw err;<br>请注意，这些是用户级错误，并用 err.expose 标记，这意味着消息适用于客户端响应，这通常不是错误消息的内容，因为您不想泄漏故障详细信息。<br>你可以根据需要将 properties 对象传递到错误中，对于装载上传给请求者的机器友好的错误是有用的。这用于修饰其人机友好型错误并向上游的请求者报告非常有用。</p>
+<p>ctx.throw(401, ‘access_denied’, { user: user });<br>koa 使用 http-errors 来创建错误。</p>
+<p>ctx.assert(value, [status], [msg], [properties])<br>当 !value 时，Helper 方法抛出类似于 .throw() 的错误。这与 node 的 assert() 方法类似.</p>
+<p>ctx.assert(ctx.state.user, 401, ‘User not found. Please login!’);<br>koa 使用 http-assert 作为断言。</p>
+<h6 id="2-2-API之Request"><a href="#2-2-API之Request" class="headerlink" title="2.2 API之Request"></a>2.2 API之Request</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">ctx.header</div><div class="line">ctx.headers</div><div class="line">ctx.method</div><div class="line">ctx.method=</div><div class="line">ctx.url</div><div class="line">ctx.url=</div><div class="line">ctx.originalUrl</div><div class="line">ctx.origin</div><div class="line">ctx.href</div><div class="line">ctx.path</div><div class="line">ctx.path=</div><div class="line">ctx.query</div><div class="line">ctx.query=</div><div class="line">ctx.querystring</div><div class="line">ctx.querystring=</div><div class="line">ctx.host</div><div class="line">ctx.hostname</div><div class="line">ctx.fresh</div><div class="line">ctx.stale</div><div class="line">ctx.socket</div><div class="line">ctx.protocol</div><div class="line">ctx.secure</div><div class="line">ctx.ip</div><div class="line">ctx.ips</div><div class="line">ctx.subdomains</div><div class="line">ctx.is()</div><div class="line">ctx.accepts()</div><div class="line">ctx.acceptsEncodings()</div><div class="line">ctx.acceptsCharsets()</div><div class="line">ctx.acceptsLanguages()</div><div class="line">ctx.get()</div></pre></td></tr></table></figure>
+<h6 id="2-3-API之Response"><a href="#2-3-API之Response" class="headerlink" title="2.3 API之Response"></a>2.3 API之Response</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">ctx.body</div><div class="line">ctx.body=</div><div class="line">ctx.status</div><div class="line">ctx.status=</div><div class="line">ctx.message</div><div class="line">ctx.message=</div><div class="line">ctx.length=</div><div class="line">ctx.length</div><div class="line">ctx.type=</div><div class="line">ctx.type</div><div class="line">ctx.headerSent</div><div class="line">ctx.redirect()</div><div class="line">ctx.attachment()</div><div class="line">ctx.set()</div><div class="line">ctx.append()</div><div class="line">ctx.remove()</div><div class="line">ctx.lastModified=</div><div class="line">ctx.etag=</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -436,7 +438,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/Node/" rel="tag"># Node</a>
           
         </div>
       
@@ -445,8 +447,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/25/HTML5-CSS3-布局/" rel="next" title="HTML5+CSS3 布局">
-                <i class="fa fa-chevron-left"></i> HTML5+CSS3 布局
+              <a href="/2018/01/21/windows下MongoDB配置及指令/" rel="next" title="windows下MongoDB配置及指令">
+                <i class="fa fa-chevron-left"></i> windows下MongoDB配置及指令
               </a>
             
           </div>
@@ -454,10 +456,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/04/对一个项目的理解/" rel="prev" title="对一个项目的理解">
-                对一个项目的理解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -483,8 +481,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/11/26/Hexo搭建一个博客网站/"
-           data-title="Hexo搭建一个博客网站" data-url="https://fututer.github.io/2016/11/26/Hexo搭建一个博客网站/">
+      <div class="ds-thread" data-thread-key="2018/01/28/Koa基于Express的下一代Web框架/"
+           data-title="Koa基于Express的下一代Web框架" data-url="https://fututer.github.io/2018/01/28/Koa基于Express的下一代Web框架/">
       </div>
     
   </div>
@@ -610,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#正式安装Hexo"><span class="nav-number">1.</span> <span class="nav-text">正式安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一："><span class="nav-number">1.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二："><span class="nav-number">1.2.</span> <span class="nav-text">步骤二：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤三："><span class="nav-number">1.3.</span> <span class="nav-text">步骤三：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤四："><span class="nav-number">1.4.</span> <span class="nav-text">步骤四：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置github-让你的博客网站启动"><span class="nav-number">2.</span> <span class="nav-text">配置github,让你的博客网站启动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤一：-1"><span class="nav-number">2.1.</span> <span class="nav-text">步骤一：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#步骤二：-1"><span class="nav-number">2.2.</span> <span class="nav-text">步骤二：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令总结"><span class="nav-number">3.</span> <span class="nav-text">常用命令总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-安装"><span class="nav-number">1.</span> <span class="nav-text">1 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-1-全局安装koa-generator"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 全局安装koa-generator</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1-2-使用koa-generator生成koa2项目"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 使用koa-generator生成koa2项目</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1-3-cd到创建的目录下"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 cd到创建的目录下</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#1-4-启动项目"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 启动项目</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-基本用法"><span class="nav-number">2.</span> <span class="nav-text">2 基本用法</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#2-1-API之Context"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 API之Context</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-2-API之Request"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 API之Request</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-3-API之Response"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 API之Response</span></a></li></ol></li></ol></div>
             
 
           </div>

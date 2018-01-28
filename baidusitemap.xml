@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>https://fututer.github.io/2018/01/28/Koa%E5%9F%BA%E4%BA%8EExpress%E7%9A%84%E4%B8%8B%E4%B8%80%E4%BB%A3Web%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2018-01-28T12:35:36.890Z</lastmod>
+    <data>
+        <display>
+        <title>Koa基于Express的下一代Web框架</title>
+        <pubTime>2018-01-28T09:55:05.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node" url="https://fututer.github.io/categories/Node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>https://fututer.github.io/2018/01/21/windows%E4%B8%8BMongoDB%E9%85%8D%E7%BD%AE%E5%8F%8A%E6%8C%87%E4%BB%A4/</loc>
     <lastmod>2018-01-21T09:05:58.839Z</lastmod>
     <data>
@@ -37,7 +58,6 @@
     </url>
 
     
-    
   <url>
     <loc>https://fututer.github.io/2017/03/02/%E5%AD%97%E7%AC%A6%E3%80%81%E6%95%B0%E5%AD%97%E4%BB%A5%E5%8F%8A%E5%AF%B9%E8%B1%A1%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2017-03-02T12:15:50.014Z</lastmod>
@@ -60,7 +80,7 @@
     
   <url>
     <loc>https://fututer.github.io/2017/02/23/JavaScript%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2017-02-23T08:56:58.647Z</lastmod>
+    <lastmod>2017-02-23T08:56:58.648Z</lastmod>
     <data>
         <display>
         <title>JavaScript的一些小技巧</title>
@@ -80,7 +100,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/12/04/%E5%AF%B9%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
-    <lastmod>2016-12-04T06:52:37.986Z</lastmod>
+    <lastmod>2016-12-04T06:52:37.987Z</lastmod>
     <data>
         <display>
         <title>对一个项目的理解</title>
@@ -100,7 +120,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/26/Hexo%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2016-11-26T08:38:35.921Z</lastmod>
+    <lastmod>2016-11-26T08:38:35.922Z</lastmod>
     <data>
         <display>
         <title>Hexo搭建一个博客网站</title>
@@ -122,7 +142,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/25/HTML5-CSS3-%E5%B8%83%E5%B1%80/</loc>
-    <lastmod>2016-11-22T13:51:01.297Z</lastmod>
+    <lastmod>2016-11-22T13:51:01.298Z</lastmod>
     <data>
         <display>
         <title>HTML5+CSS3 布局</title>
@@ -144,7 +164,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/22/js-Closure-%E9%97%AD%E5%8C%85/</loc>
-    <lastmod>2016-11-22T12:18:35.541Z</lastmod>
+    <lastmod>2016-11-22T12:18:35.542Z</lastmod>
     <data>
         <display>
         <title>js Closure(闭包)</title>
@@ -184,7 +204,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/24/js-Promise%E5%BC%82%E6%AD%A5%E6%89%A7%E8%A1%8C/</loc>
-    <lastmod>2016-11-22T12:15:10.992Z</lastmod>
+    <lastmod>2016-11-22T12:15:10.993Z</lastmod>
     <data>
         <display>
         <title>js Promise异步执行</title>
@@ -204,7 +224,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/21/js%E5%9B%BE%E7%89%87%E6%83%B0%E6%80%A7%E5%8A%A0%E8%BD%BD/</loc>
-    <lastmod>2016-11-21T11:31:50.527Z</lastmod>
+    <lastmod>2016-11-21T11:31:50.528Z</lastmod>
     <data>
         <display>
         <title>js图片惰性加载</title>
@@ -224,7 +244,7 @@
     
   <url>
     <loc>https://fututer.github.io/2016/11/20/%E8%87%AA%E5%88%B6css3-Loading/</loc>
-    <lastmod>2016-11-21T11:22:34.259Z</lastmod>
+    <lastmod>2016-11-21T11:22:34.260Z</lastmod>
     <data>
         <display>
         <title>自制css3 Loading</title>
