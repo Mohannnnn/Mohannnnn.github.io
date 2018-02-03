@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="其它," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -102,19 +102,22 @@
 
 
 
-<meta name="description" content="缘由这周因为一个项目，所以没时间写技术博客了。那么就来谈一谈我在这个项目中的学习和体会吧！
-本来是接了一个学校的外包，什么项目呢？其实就是做一个学校的信息发布平台。网页其实挺简单的,我想把网页写成.html的。但是组长说要让控制权交给后台管理，也就是页面和数据由后台渲染。所以他想把所有的页面都写成jsp的。在jsp里面用java来渲染数据和页面。对此，我真的感到很无赖。jsp的页面嵌java代码">
+<meta name="description" content="目前前端比较火的的两大框架React.js(facebook)和Vue.js(淘宝),这两大框架比较火。所以我重点研究了下React的Virtual DOM和Vue的双向数据绑定。
+
+1.Virtual DOM在React中，也有一个render函数来将虚拟DOM树，并且，React中有state转移的过程，所以每次state有变化之后，就会触发render函数，重新构造一个虚拟DOM树。对比新">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对一个项目的理解">
-<meta property="og:url" content="https://fututer.github.io/2016/12/04/对一个项目的理解/index.html">
+<meta property="og:title" content="React虚拟DOM和Vue双向数据绑定">
+<meta property="og:url" content="https://fututer.github.io/2018/02/03/React虚拟DOM和Vue双向数据绑定/index.html">
 <meta property="og:site_name" content="MoHan">
-<meta property="og:description" content="缘由这周因为一个项目，所以没时间写技术博客了。那么就来谈一谈我在这个项目中的学习和体会吧！
-本来是接了一个学校的外包，什么项目呢？其实就是做一个学校的信息发布平台。网页其实挺简单的,我想把网页写成.html的。但是组长说要让控制权交给后台管理，也就是页面和数据由后台渲染。所以他想把所有的页面都写成jsp的。在jsp里面用java来渲染数据和页面。对此，我真的感到很无赖。jsp的页面嵌java代码">
-<meta property="og:updated_time" content="2016-12-04T06:52:37.987Z">
+<meta property="og:description" content="目前前端比较火的的两大框架React.js(facebook)和Vue.js(淘宝),这两大框架比较火。所以我重点研究了下React的Virtual DOM和Vue的双向数据绑定。
+
+1.Virtual DOM在React中，也有一个render函数来将虚拟DOM树，并且，React中有state转移的过程，所以每次state有变化之后，就会触发render函数，重新构造一个虚拟DOM树。对比新">
+<meta property="og:updated_time" content="2018-02-03T12:39:29.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对一个项目的理解">
-<meta name="twitter:description" content="缘由这周因为一个项目，所以没时间写技术博客了。那么就来谈一谈我在这个项目中的学习和体会吧！
-本来是接了一个学校的外包，什么项目呢？其实就是做一个学校的信息发布平台。网页其实挺简单的,我想把网页写成.html的。但是组长说要让控制权交给后台管理，也就是页面和数据由后台渲染。所以他想把所有的页面都写成jsp的。在jsp里面用java来渲染数据和页面。对此，我真的感到很无赖。jsp的页面嵌java代码">
+<meta name="twitter:title" content="React虚拟DOM和Vue双向数据绑定">
+<meta name="twitter:description" content="目前前端比较火的的两大框架React.js(facebook)和Vue.js(淘宝),这两大框架比较火。所以我重点研究了下React的Virtual DOM和Vue的双向数据绑定。
+
+1.Virtual DOM在React中，也有一个render函数来将虚拟DOM树，并且，React中有state转移的过程，所以每次state有变化之后，就会触发render函数，重新构造一个虚拟DOM树。对比新">
 
 
 
@@ -142,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="https://fututer.github.io/2016/12/04/对一个项目的理解/"/>
+  <link rel="canonical" href="https://fututer.github.io/2018/02/03/React虚拟DOM和Vue双向数据绑定/"/>
 
 
 
 
 
-  <title> 对一个项目的理解 | MoHan </title>
+  <title> React虚拟DOM和Vue双向数据绑定 | MoHan </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -279,7 +282,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2016/12/04/对一个项目的理解/">
+  <link itemprop="mainEntityOfPage" href="https://fututer.github.io/2018/02/03/React虚拟DOM和Vue双向数据绑定/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="吴晗(Mo Han)">
@@ -303,7 +306,7 @@
             
             
               
-                对一个项目的理解
+                React虚拟DOM和Vue双向数据绑定
               
             
           </h1>
@@ -316,8 +319,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-04T13:55:33+08:00">
-                2016-12-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-03T17:36:25+08:00">
+                2018-02-03
               </time>
             
 
@@ -335,8 +338,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其它/" itemprop="url" rel="index">
-                    <span itemprop="name">其它</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -350,8 +353,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/04/对一个项目的理解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/04/对一个项目的理解/" itemprop="commentCount"></span>
+                <a href="/2018/02/03/React虚拟DOM和Vue双向数据绑定/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/02/03/React虚拟DOM和Vue双向数据绑定/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -361,7 +364,7 @@
 
           
           
-             <span id="/2016/12/04/对一个项目的理解/" class="leancloud_visitors" data-flag-title="对一个项目的理解">
+             <span id="/2018/02/03/React虚拟DOM和Vue双向数据绑定/" class="leancloud_visitors" data-flag-title="React虚拟DOM和Vue双向数据绑定">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -386,12 +389,17 @@
       
 
       
-        <hr>
-<h5 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h5><p>这周因为一个项目，所以没时间写技术博客了。那么就来谈一谈我在这个项目中的学习和体会吧！</p>
-<p>本来是接了一个学校的外包，什么项目呢？其实就是做一个学校的信息发布平台。网页其实挺简单的,我想把网页写成.html的。但是组长说要让控制权交给后台管理，也就是页面和数据由后台渲染。所以他想把所有的页面都写成jsp的。在jsp里面用java来渲染数据和页面。对此，我真的感到很无赖。jsp的页面嵌java代码，可读性和可维护性真的很差。内心真不想用这东西。最后，我也妥协了 。好吧，就用这个吧。</p>
-<p>刚开始的时候，他们的需求只有一句话：发布信息。但是具体的页面草稿样式，具体的功能其它的，都没有给我们说。等到我们做的差不多时候，它的需求又变了，说要要加一个附件下载页面。本来我们起初想的是：附件下载写在相应的文章的下面。还有一件可笑的是：当初让我模仿一个网站来写，写完了，又说其实是让你模仿成这样，又给我一个网站。我尼玛，为啥一开始不给我后面这个网站呢？都说客户需求是不定的，但是你一会让我根据这个来写，一会又让我按照那个来写，也不带这么折腾人的啊！</p>
-<h5 id="感受"><a href="#感受" class="headerlink" title="感受"></a>感受</h5><p>终于明白为什么对于一个项目来说花费的成本最高的不是时间和技术，而是沟通。是的，在开始一个项目前，一定要明了需求，知道需求方到底想干什么，想做什么。这些都应该问清楚。还有关于某些模块的实现、架构，项目成员也应该一起讨论，探究出一种最佳的实现方法。</p>
-<hr>
+        <blockquote>
+<p>目前前端比较火的的两大框架React.js(facebook)和Vue.js(淘宝),这两大框架比较火。所以我重点研究了下React的Virtual DOM和Vue的双向数据绑定。</p>
+</blockquote>
+<h5 id="1-Virtual-DOM"><a href="#1-Virtual-DOM" class="headerlink" title="1.Virtual DOM"></a>1.Virtual DOM</h5><p>在React中，也有一个render函数来将虚拟DOM树，并且，React中有state转移的过程，所以每次state有变化之后，就会触发render函数，重新构造一个虚拟DOM树。对比新旧虚拟DOM树的差别，记录下差异，然后只针对差异部分对应的真实DOM进行操作。<br>如何进行新旧虚拟DOM树的对比呢？<br>这里采用的是Diff算法。Diff算法比较复杂，主要的思路是这样的。<br>首先，每一次生成的虚拟DOM树上的各个节点都对应唯一的一个id，当第二次生成了新的DOM树时，对原来树上的每一个节点对比新树上对应节点，如果不同，就记录下来这个差异。同时，差异也分为很多种：<br>1.替换节点；<br>2.修改属性；<br>3.对文本内容修改<br>4.移动、删除、增加节点；<br>对每一类记录下差异之后，针对不同的差异进行不同的操作。<br>比如，替换节点就需要调原生JS的repaceChild()接口；对于修改属性，则要调setAttribute()接口等等。</p>
+<h6 id="1-1算法实现"><a href="#1-1算法实现" class="headerlink" title="1.1算法实现"></a>1.1算法实现</h6><p>步骤1.用 JavaScript 对象结构表示 DOM 树的结构；然后用这个树构建一个真正的 DOM 树，插到文档当中<br>步骤2.当状态变更的时候，重新构造一棵新的对象树。然后用新的树和旧的树进行比较，记录两棵树差异<br>步骤3.把2所记录的差异应用到步骤1所构建的真正的DOM树上，视图就更新了</p>
+<p>1.1.1用js创建虚拟DOM<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Element</span> (<span class="params">tagName, props, children</span>) </span>&#123;</div><div class="line">  <span class="keyword">this</span>.tagName = tagName</div><div class="line">  <span class="keyword">this</span>.props = props</div><div class="line">  <span class="keyword">this</span>.children = children</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">el</span>(<span class="params">tagName, props, children</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">new</span> Element(tagName, props, children)</div><div class="line">&#125;</div><div class="line"></div><div class="line">Element.prototype.render = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> el = <span class="built_in">document</span>.createElement(<span class="keyword">this</span>.tagName) <span class="comment">// 根据tagName构建</span></div><div class="line">  <span class="keyword">var</span> props = <span class="keyword">this</span>.props</div><div class="line"></div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> propName <span class="keyword">in</span> props) &#123; <span class="comment">// 设置节点的DOM属性</span></div><div class="line">    <span class="keyword">var</span> propValue = props[propName]</div><div class="line">    el.setAttribute(propName, propValue)</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">var</span> children = <span class="keyword">this</span>.children || []</div><div class="line"></div><div class="line">  children.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">child</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> childEl = (child <span class="keyword">instanceof</span> Element)</div><div class="line">      ? child.render() <span class="comment">// 如果子节点也是虚拟DOM，递归构建DOM节点</span></div><div class="line">      : <span class="built_in">document</span>.createTextNode(child) <span class="comment">// 如果字符串，只构建文本节点</span></div><div class="line">    el.appendChild(childEl)</div><div class="line">  &#125;)</div><div class="line"></div><div class="line">  <span class="keyword">return</span> el</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> ul = el(<span class="string">'ul'</span>, &#123;<span class="attr">id</span>: <span class="string">'list'</span>&#125;, [</div><div class="line">  el(<span class="string">'li'</span>, &#123;<span class="attr">class</span>: <span class="string">'item'</span>&#125;, [<span class="string">'Item 1'</span>]),</div><div class="line">  el(<span class="string">'li'</span>, &#123;<span class="attr">class</span>: <span class="string">'item'</span>&#125;, [<span class="string">'Item 2'</span>]),</div><div class="line">  el(<span class="string">'li'</span>, &#123;<span class="attr">class</span>: <span class="string">'item'</span>&#125;, [<span class="string">'Item 3'</span>])</div><div class="line">])</div><div class="line"></div><div class="line"><span class="comment">//实例化</span></div><div class="line"><span class="keyword">var</span> ulRoot = ul.render()</div><div class="line"><span class="built_in">document</span>.body.appendChild(ulRoot)</div></pre></td></tr></table></figure></p>
+<p>实现后html结构：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">id</span>=<span class="string">'list'</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">'item'</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">'item'</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">'item'</span>&gt;</span>Item 3<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>1.1.2比较两棵虚拟DOM树的差异<br>会用到深度优先遍历-记录差异，列表对比算法<br>1.1.3把差异应用到真正的DOM树上<br>根据便利后的结果差异，进行DOM操作。<br>步骤二三详情请看<a href="https://github.com/livoras/blog/issues/13" target="_blank" rel="external">https://github.com/livoras/blog/issues/13</a></p>
+<h5 id="2-Vue双向数据绑定"><a href="#2-Vue双向数据绑定" class="headerlink" title="2.Vue双向数据绑定"></a>2.Vue双向数据绑定</h5><p>原理：Vuejs是采用数据劫持结合发布者-订阅者模式的方式，通过<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty" target="_blank" rel="external">Object.defineProperty()</a>来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。<br>简单的数据绑定：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line"> <span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></div><div class="line"> &lt;body&gt;</div><div class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"a"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"b"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">   <span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line">   <span class="built_in">Object</span>.defineProperty(obj, <span class="string">'hello'</span>, &#123;</div><div class="line">       <span class="attr">get</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">           <span class="built_in">console</span>.log(<span class="string">'get val:'</span>+ val);</div><div class="line">           <span class="keyword">return</span> val;</div><div class="line">       &#125;,</div><div class="line">       <span class="attr">set</span>: <span class="function"><span class="keyword">function</span>(<span class="params">newVal</span>) </span>&#123;</div><div class="line">            val = newVal;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">'set val:'</span>+ val);</div><div class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'a'</span>).value = val;</div><div class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'b'</span>).innerHTML = val;</div><div class="line">       &#125;</div><div class="line">    &#125;);</div><div class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">      obj.hello = e.target.value;</div><div class="line">    &#125;);</div><div class="line">   <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line">&lt;<span class="regexp">/html&gt;</span></div></pre></td></tr></table></figure></p>
+<p>实现数据劫持需要3个方法：<br>1.实现一个监听器Observer，用来劫持并监听所有属性，如果有变动的，就通知订阅者。<br>2.实现一个订阅者Watcher，可以收到属性的变化通知并执行相应的函数，从而更新视图。<br>3.实现一个解析器Compile，可以扫描和解析每个节点的相关指令，并根据初始化模板数据以及初始化相应的订阅器。</p>
+<p>再CSDN上面找了一个讲解的非常好的博客，猛戳<a href="http://www.cnblogs.com/wj204/p/6423478.html" target="_blank" rel="external">http://www.cnblogs.com/wj204/p/6423478.html</a></p>
 
       
     </div>
@@ -415,7 +423,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/其它/" rel="tag"># 其它</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -424,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/26/Hexo搭建一个博客网站/" rel="next" title="Hexo搭建一个博客网站">
-                <i class="fa fa-chevron-left"></i> Hexo搭建一个博客网站
+              <a href="/2018/01/28/Koa基于Express的下一代Web框架/" rel="next" title="Koa基于Express的下一代Web框架">
+                <i class="fa fa-chevron-left"></i> Koa基于Express的下一代Web框架
               </a>
             
           </div>
@@ -433,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/23/JavaScript的一些小技巧/" rel="prev" title="JavaScript的一些小技巧">
-                JavaScript的一些小技巧 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -462,8 +466,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/04/对一个项目的理解/"
-           data-title="对一个项目的理解" data-url="https://fututer.github.io/2016/12/04/对一个项目的理解/">
+      <div class="ds-thread" data-thread-key="2018/02/03/React虚拟DOM和Vue双向数据绑定/"
+           data-title="React虚拟DOM和Vue双向数据绑定" data-url="https://fututer.github.io/2018/02/03/React虚拟DOM和Vue双向数据绑定/">
       </div>
     
   </div>
@@ -589,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#缘由"><span class="nav-number">1.</span> <span class="nav-text">缘由</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#感受"><span class="nav-number">2.</span> <span class="nav-text">感受</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-Virtual-DOM"><span class="nav-number">1.</span> <span class="nav-text">1.Virtual DOM</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-1算法实现"><span class="nav-number">1.1.</span> <span class="nav-text">1.1算法实现</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-Vue双向数据绑定"><span class="nav-number">2.</span> <span class="nav-text">2.Vue双向数据绑定</span></a></li></ol></div>
             
 
           </div>
